@@ -1,0 +1,42 @@
+@media screen and (max-width: 570px) {
+  .about-me__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-me__container .about-me-bio {
+    width: 100%;
+    padding: 0;
+  }
+  .contact__container .contact-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__container .contact-list__item a {
+    margin: 0;
+  }
+  .skills__container .skills-list li {
+    margin-bottom: 20px;
+  }
+  .education__container .education-list li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .education__container .education-list li p {
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=media.css.map */
