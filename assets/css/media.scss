@@ -1,0 +1,50 @@
+@media screen and (max-width: 570px) {
+    .about-me {
+        &__container {
+            flex-direction: column;
+            .about-me-bio {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+    .contact {
+        &__container {
+            .contact-list {
+                &__item {
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .skills {
+        &__container {
+            .skills-list {
+                li {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .education {
+        &__container {
+            .education-list {
+                li {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    p{
+                        padding: 20px 0;
+                        text-align: center;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+}
