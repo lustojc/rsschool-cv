@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/media.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
     <title>Resume</title>
 </head>
+
 <body>
+    <header class="header">
+        <div class="navbar">
+            <nav class="navbar-nav">
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="#about-me" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#contact" class="navbar-link">Contact</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#skills" class="navbar-link">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#education" class="navbar-link">Education</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#projects" class="navbar-link">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="header-burger">
+            <span></span>
+        </div>
+        <!-- /.navbar -->
+    </header>
     <main>
-        <section class="about-me">
+        <section id="about-me" class="about-me">
             <div class="container">
                 <h1>Resume</h1>
                 <h2>About</h2>
                 <div class="about-me__container">
                     <div class="about-me__image">
-                        <img src="assets/img/avatar.jpg" alt="avatar">
-
+                        <img src="assets/img/avatar.jpeg" alt="avatar" />
                     </div>
                     <ul class="about-me-bio">
                         <li class="about-me-bio__item">
-                            <p><span><i>Name/Surname:</i></span> Alexander Lusto</p>
+                            <p>
+                                <span><i>Name/Surname:</i></span> Alexander Lusto
+                            </p>
                         </li>
                         <li class="about-me-bio__item">
-                            <p><span><i>Age:</i></span> 20</p>
+                            <p>
+                                <span><i>Age:</i></span> 20
+                            </p>
                         </li>
                         <li class="about-me-bio__item">
-                            <p><span><i>Country:</i></span> Belarus</p>
+                            <p>
+                                <span><i>Country:</i></span> Belarus
+                            </p>
                         </li>
                         <li class="about-me-bio__item">
-                            <p><span><i>City:</i></span> Minsk</p>
+                            <p>
+                                <span><i>City:</i></span> Minsk
+                            </p>
                         </li>
                         <li class="about-me-bio__item">
-                            <p><span><i>Languages:</i></span> Russian (Native Speaker), English(C1), Espanol(A1), Belarussian(Native Speaker)</p>    
+                            <p>
+                                <span><i>Languages:</i></span> Russian (Native Speaker),
+                                English(C1), Espanol(A1), Belarussian(Native Speaker)
+                            </p>
                         </li>
                     </ul>
                 </div>
                 <div class="about-me__description">
-                    <p>I am learning as a translator/interpriter, but i'm feeling that it's not my cup of tea. Now i try to become a front-end developer. I think its a good opportunity for me couse i know english and if a add knowledge in codding sphere i can be have a good, interesting job. </p>
+                    <article>
+                        I am learning as a translator/interpriter, but i'm feeling that
+                        it's not my cup of tea. Now i try to become a front-end developer.
+                        I think its a good opportunity for me couse i know english and if
+                        i add knowledge in codding sphere i can be have a good,
+                        interesting job.
+                    </article>
                 </div>
             </div>
-
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="container">
                 <h2>Contact</h2>
                 <div class="contact__container">
                     <ul class="contact-list">
                         <li class="contact-list__item">
                             <span><i>LinkedIn:</i></span>
-                            <a href="https://www.linkedin.com/in/alexander-lusto-88b2b2209/" target="_blank">www.linkedin.com/lustojc</a>
+                            <a href="https://www.linkedin.com/in/alexander-lusto-88b2b2209/"
+                                target="_blank">www.linkedin.com/lustojc</a>
                         </li>
                         <li class="contact-list__item">
                             <span><i>VK:</i></span>
@@ -74,8 +120,7 @@
                 </div>
             </div>
         </section>
-
-        <section class="skills">
+        <section id="skills" class="skills">
             <div class="container">
                 <h2>Skills</h2>
                 <div class="skills__container">
@@ -134,29 +179,42 @@
                 <div class="code__container">
                     <h3>Update calculator display</h3>
                     <blockquote>
-                        updateDisplay() {
-                           <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.currentOperandTextElement.innerText =
-                           <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.getDisplayNumber(this.currentOperand)
-                           <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (this.operation != null) {
-                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.previousOperandTextElement.innerText =
-                            <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
-                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {
-                                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; previousOperandTextElement.innerText = ''
-                                <br> &nbsp;&nbsp;&nbsp;}
-                                <br> }
+                        <span class="green">updateDisplay</span><span class="yellow">()</span> { <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="purple">this</span>.<span class="yellow">currentOperandTextElement.innerText</span>
+                        = <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">this</span>.<span
+                            class="green">getDisplayNumber</span>
+                        <span class="blue">(this.currentOperand)</span> <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">if</span>
+                        <span class="blue">(this.operation != null)</span> { <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                            class="purple">this</span>.<span class="yellow">previousOperandTextElement.innerText</span>
+                        = <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`
+                        <span class="purple">$</span>{<span
+                            class="blue">this.getDisplayNumber(this.previousOperand)</span>} <span
+                            class="purple">$</span>{<span class="blue">this.operation</span>}` <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        } <span class="purple">else</span> { <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span class="yellow">previousOperandTextElement.innerText</span> =
+                        '' <br />
+                        &nbsp;&nbsp;&nbsp;} <br />
+                        }
                     </blockquote>
-                </div>  
+                </div>
             </div>
         </section>
 
-        <section class="education">
+        <section id="education" class="education">
             <div class="container">
                 <h2>Education</h2>
                 <div class="education__container">
                     <ul class="education-list">
                         <li>
                             <span>2018-2023</span>
-                            <p>MINSK STATE LINGUISTIC UNIVERSITY</p>
+                            <p><mark>MINSK STATE LINGUISTIC UNIVERSITY</mark></p>
                         </li>
                         <li>
                             <span>2020-2021</span>
@@ -166,33 +224,157 @@
                         <li>
                             <span>2021</span>
                             <p>RS School JS Stage#0</p>
+                            <a href="https://app.rs.school/certificate/jg45cep8" target="_blank">Certificate</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects__container">
+                    <div class="project-item">
+                        <div class="project-item__main">
+                            <a href="https://git-app-paralect.vercel.app/" target="_blank" class="project-item__image">
+                                <img src="./assets/img/git-app.jpeg" alt="project1" />
+                            </a>
+                            <div class="project-item-technology">
+                                <p class="project-item-technology__item">
+                                    HTML
+                                </p>
+                                <p class="project-item-technology__item">
+                                    CSS/SAAS
+                                </p>
+                                <p class="project-item-technology__item">
+                                    BEM
+                                </p>
+                                <p class="project-item-technology__item">
+                                    JavaScript
+                                </p>
+                                <p class="project-item-technology__item">
+                                    React
+                                </p>
+                                <p class="project-item-technology__item">
+                                    NPM
+                                </p>
+                                <p class="project-item-technology__item">
+                                    FETCH
+                                </p>
+                                <p class="project-item-technology__item">
+                                    HOOK
+                                </p>
+                                <p class="project-item-technology__item">
+                                    API
+                                </p>
+                                <p class="project-item-technology__item">
+                                    UseContext
+                                </p>
+                                <p class="project-item-technology__item">
+                                    GIT
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-item__info">
+                            <p class="project-item__title">
+                                <span>React Git-Hub search</span>
+                            </p>
+                            <aside class="project-item__descr">
+                                React Git Hub Search project for Paralect
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-item__main">
+                            <a href="https://rolling-scopes-school.github.io/lustojc-JSFEPRESCHOOL/museum/"
+                                target="_blank" class="project-item__image">
+                                <img src="./assets/img/museum.jpeg" alt="project2" />
+                            </a>
+                            <div class="project-item-technology">
+                                <p class="project-item-technology__item">
+                                    HTML
+                                </p>
+                                <p class="project-item-technology__item">
+                                    CSS/SAAS
+                                </p>
+                                <p class="project-item-technology__item">
+                                    BEM
+                                </p>
+                                <p class="project-item-technology__item">
+                                    JavaScript
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-item__info">
+                            <p class="project-item__title">
+                                <span>Museum Louver project for RS School Stage#0</span>
+                            </p>
+                            <aside class="project-item__descr">
+                                No-adaptive Museum landing page
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-item__main">
+                            <a href="https://rolling-scopes-school.github.io/lustojc-JSFEPRESCHOOL/vertical-slider/"
+                                target="_blank" class="project-item__image">
+                                <img src="./assets/img/slider.jpeg" alt="project3" />
+                            </a>
+                            <div class="project-item-technology">
+                                <p class="project-item-technology__item">
+                                    HTML
+                                </p>
+                                <p class="project-item-technology__item">
+                                    CSS/SAAS
+                                </p>
+                                <p class="project-item-technology__item">
+                                    BEM
+                                </p>
+                                <p class="project-item-technology__item">
+                                    JavaScript
+                                </p>
+                                <p class="project-item-technology__item">
+                                    JQuery
+                                </p>
+                                <p class="project-item-technology__item">
+                                    GIT
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-item__info">
+                            <p class="project-item__title">
+                                <span>Slider project for RS School Stage#0</span>
+                            </p>
+                            <aside class="project-item__descr">
+                                Slider project with New Year timer, painting, alarm
+                            </aside>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <footer class="footer">
             <div class="container">
-                
                 <div class="footer__container">
                     <div class="footer-github">
                         <a href="https://github.com/lustojc" target="_blank">
-                         <img src="assets/img/gh-icon.svg" alt="github"/>
-                     </a>
-                     </div>
-                     <p>2021</p>
-                     <div class="footer-rs">
-                         <a href="https://rs.school/" target="_blank">
-                             <img src="assets/img/rs_school_js.svg" alt="rs-school"/>
-                         </a>
-                     </div>
+                            <img src="assets/img/gh-icon.svg" alt="github" />
+                        </a>
+                    </div>
+                    <p><time>2021</time></p>
+                    <div class="footer-rs">
+                        <a href="https://rs.school/" target="_blank">
+                            <img src="assets/img/rs_school_js.svg" alt="rs-school" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
-
-
     </main>
-    
+    <script src="main.js"></script>
 </body>
+
 </html>

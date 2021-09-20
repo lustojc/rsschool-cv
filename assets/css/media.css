@@ -1,3 +1,81 @@
+@media screen and (max-width: 700px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-burger {
+    display: block;
+    padding: 20px;
+    margin-left: 20px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .navbar-menu {
+    opacity: 0;
+    pointer-events: none;
+    padding-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #242121;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+  }
+  .navbar-menu .navbar-item {
+    margin-bottom: 30px;
+  }
+  .navbar-menu .navbar-item:last-child {
+    margin-bottom: 0px;
+  }
+  .navbar-active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .burger-active span {
+    background: none;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+  }
+  .burger-active span::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+  }
+  .burger-active span::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+  }
+}
+
 @media screen and (max-width: 570px) {
   .about-me__container {
     -webkit-box-orient: vertical;
@@ -37,6 +115,23 @@
   .education__container .education-list li p {
     padding: 20px 0;
     text-align: center;
+  }
+  .projects__container .project-item__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects__container .project-item .project-item__image {
+    width: 100%;
+  }
+  .projects__container .project-item .project-item-technology {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=media.css.map */
