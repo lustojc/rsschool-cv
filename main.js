@@ -19,4 +19,4 @@ function headerMenuActive () {
 };
 
 headerMenuActive();ъ
-let private = document.q
+
