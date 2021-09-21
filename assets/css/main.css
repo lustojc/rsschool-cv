@@ -28,7 +28,7 @@ span,
 li,
 a,
 blockquote,
-article, aside {
+article, aside, h4 {
   font-family: "Montserrat-Regular";
   color: #242121;
   text-decoration: none;
@@ -52,6 +52,7 @@ p,
 span,
 article,
 aside,
+h4,
 a {
   font-size: 20px;
   line-height: 26px;
